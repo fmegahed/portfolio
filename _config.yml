@@ -1,0 +1,104 @@
+# Site
+repository: fmegahed/portfolio
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Fadel Megahed
+title: Business Analytics | Demand Forecasting | Optimization Expert
+email: megahefm@miamioh.edu
+# email_title: Email (Email title override)
+# phone: Your phone number (optional)
+# phone_title: Phone (Phone title override)
+# website: Your website (eg. https://google.com)(optional)
+# website_title: Web (Website title override)
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+# twitter_username: jekyllrb
+github_username: fmegahed
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll
+linkedin_username: 
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# orcid_username: 0000-0000-0000-0000
+# googlescholar_username: D847cGsAAAAJ
+
+# Additional icon links
+# additional_links:
+# - title: Link name
+#   icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/profile.jpg
+about_content: |
+  I'm Fadel Megahed, a business analytics professional passionate about transforming complex data into actionable insights that drive strategic decision-making. My academic journey has equipped me with a comprehensive foundation in analytics, from understanding core business intelligence principles to implementing advanced optimization techniques. I'm particularly drawn to projects where data science meets real-world business challenges, as evidenced by my work on demand forecasting for Duke Energy, where I applied predictive modeling to solve critical operational problems.
+  
+  My technical expertise spans the full analytics lifecycle, including database design and data warehousing, optimization modeling, and business intelligence systems. I've developed strong proficiency in leveraging enterprise technologies and analytical frameworks to extract meaningful patterns from data. Through coursework and hands-on projects, I've honed my ability to not only build robust analytical solutions but also communicate findings effectively to stakeholders, bridging the gap between technical analysis and business strategy.
+  
+  I'm actively seeking opportunities where I can apply my analytical skills to solve challenging business problems, whether through internships, co-op positions, or entry-level roles in business analytics, data science, or operations research. I'm especially interested in organizations that value data-driven decision-making and offer mentorship opportunities where I can continue growing as an analytics professional while making meaningful contributions to the team.
+
+content:
+  - title: Projects
+    layout: list
+    content:
+      - layout: top-middle
+        title: Demand forecasting for duke energy
+        description: |
+          This class project developed a comprehensive demand forecasting system for Duke Energy to predict maximum daily energy demand for the next 28 days using both statistical models (AutoARIMA, AutoETS) and machine learning algorithms (Lasso, KNN, Random Forest, LightGBM). The solution integrated multiple data sources including historical energy consumption, weather patterns, and holiday information, employing advanced time series techniques such as cross-validation with sliding windows, lag features, and rolling means through the MLForecast library. The project delivered comparative performance analysis across models using MAPE and RMSE metrics, providing valuable insights for energy grid management and capacity planning.
+          
+          - Developed time series forecasting models using Python (LightGBM, Random Forest, Lasso, KNN) to predict Duke Energy's maximum daily demand 28 days ahead, implementing MLForecast library with sliding window cross-validation and advanced feature engineering techniques including lag features and rolling means
+          - Engineered comprehensive energy forecasting dataset by merging 5+ years of hourly Duke Energy consumption data (2020-2025) with external variables including holiday calendars and weather data from multiple cities, transforming hourly records into daily maximum load metrics
+          - Evaluated and compared 8+ forecasting algorithms including AutoARIMA, AutoETS, and machine learning approaches using MAPE and RMSE metrics, identifying optimal models for demand prediction accuracy
+          
+          **Project Files:**
+          - [duke_energy_data_part02.py](https://github.com/fmegahed/portfolio/blob/main/projects/demand-forecasting-for-duke-energy/duke_energy_data_part02.py)
+          - [duke_energy_data_part01.py](https://github.com/fmegahed/portfolio/blob/main/projects/demand-forecasting-for-duke-energy/duke_energy_data_part01.py)
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: Miami University
+        sub_title: Bachelor's Degree in Information Systems & Analytics
+        caption: Expected 2025
+        description: |
+          Relevant Coursework:
+          - ISA 225: Principles of Business Analytics
+          - ISA 235: Information Technology and the Intelligent Enterprise
+          - ISA 321: Optimization in Business Analytics
+          - ISA 345: Database Systems and Data Warehousing
+  - title: Skills
+    layout: text
+    content: |
+      **Technical Skills:** Data Analysis, SQL
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/modern-resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
